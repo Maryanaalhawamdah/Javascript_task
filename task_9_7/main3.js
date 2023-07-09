@@ -1,4 +1,4 @@
-let  text=Number(prompt("Enter Your Birthday Month"))
+let  text   =  Number(prompt("Enter Your Birthday Month"))
 
 let x ;
 
@@ -31,16 +31,16 @@ switch (text) {
         x  ="September";
         break;
     case  10:
-        x  ="Oct";
+        x  ="Octoper";
         break;
     case 11:
-        x="NNov";
+        x="November";
         break;
+    case 12:
+            x="December";
+    break;
+    
 
 
   }
-
-
-
-
 console.log(x)
