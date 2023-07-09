@@ -1,33 +1,46 @@
-let x="Monthname"
+let  text=Number(prompt("Enter Your Birthday Month"))
 
-switch (x) {
+let x ;
+
+switch (text) {
     case 1:
-      text = "January";
+      x = "January";
       break;
     case 2:
-      text = "February";
+      x = "February";
       break;
     case 3:
-      text = "March";
+      x = "March";
+      break;
     case 4:
-        text ="April";
+        x ="April";
+        break;
     case  5:
-        text  ="May";
+        x  ="May";
+        break;
     case 6:
-        text ="June";
+        x ="June";
+        break;
     case  7:
-        text ="July";
+        x ="July";
+        break;
     case 8:
-        text ="August";
+        x ="August";
+        break;
     case 9:
-        text  ="September";
+        x  ="September";
+        break;
     case  10:
-        text  ="Oct";
+        x  ="Oct";
+        break;
     case 11:
-        text="NNov";
+        x="NNov";
+        break;
+
+
   }
 
 
 
 
-let x=prompt('Enter Your  Birthday  Month :');
+console.log(x)
