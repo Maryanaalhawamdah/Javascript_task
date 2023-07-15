@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task  8</h1>
+    <p>
+        8
+Create a function called middleOfArray
+that take an array as a parameter
+and return the middle element in an array if it is have an odd elemnets
+and return the two middle elemnt in an array if it is have an even elemnets
+
+Ex: middleOfArray([1,4,5]) => 4
+Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
+    </p>
+    <script>
+        
+        
+        const array1=["t","u","g","x"];
+         console.log(array1);
+         midd = array1[array1.length >> 1];
+    
+         console.log(midd);
+
+       
+       const array = [1,2,8,4,5];
+        console.log(array);
+
+        function middle(i) {
+          if (array[i] !== undefined) {
+               return middle(i+1);
+             } else {
+              return array[Math.floor(i / 2)];
+           }
+}
+
+       console.log("middle of array :"  ,middle(0));
+    </script>
+    
+</body>
+</html>
