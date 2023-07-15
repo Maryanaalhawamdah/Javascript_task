@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task19</h1>
+    <p>
+        19
+Create a function called repeatChar
+that accept a string and char
+and return the times that this char repeat inside this string
+
+var string= "alex mercer madrasa rashed2 emad hala"
+Ex: repeatChar(string,"a") => 6
+Ex: repeatChar(string,"z") => 0
+    </p>
+    <script>
+    const string= "alex mercer madrasa rashed2 emad hala";
+    console.log(string);
+    
+    function repeatChar(string, z) {
+  
+        
+  var counter = 0;
+  
+  
+  for (let i = 0; i < string.length; i++) {
+  
+    
+    if (string[i] === z) {
+      counter++;
+    }
+  }
+  
+  return counter;
+  
+}
+
+console.log(repeatChar(string));
+
+
+
+    </script>
+</body>
+</html>

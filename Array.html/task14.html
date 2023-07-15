@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 14</h1>
+    <p>
+        14
+Create a function called minInArray
+that accept an array
+and return the minimum value inside this array
+
+var nums= [1,2,3,8,9]
+Ex: minInArray(nums) => 1
+    </p>
+    <script>
+        const points = [40, 100, 1, 5, 25];
+       console.log(points);
+       console.log("the min value is :", minInArray(points));
+       function minInArray(points){
+        var len = points.length;
+         var min = Infinity;
+        while (len--) {
+            if (points[len] < min) {
+              min = points[len];
+    }
+  }
+  return min;
+  
+}
+         
+    </script>
+    
+</body>
+</html>

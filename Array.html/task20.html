@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 20</h1>
+    <p>
+        20
+Create a function called evenIndexOddLength
+that accept an array of strings
+and return a new array that have the string with odd length in even index
+
+var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
+Ex: evenIndexOddLength(strings) => ["madrasa"]
+
+    </p>
+    <script>
+        const friendArray = ["agdumm", "bagdum", "chagdum", "lagdum", "jagdum", "magdum"];
+
+function oddFriend(friendArray) {
+  for (let i = 0; i < friendArray.length; i++) {
+    if (friendArray[i].length % 2 != 0) {
+      return friendArray[i];
+    }
+  }
+}
+const myFriend = oddFriend(friendArray);
+console.log(myFriend);
+    </script>
+</body>
+</html>
