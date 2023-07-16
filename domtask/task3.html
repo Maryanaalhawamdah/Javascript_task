@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+            border: 3px solid black;
+            margin-bottom: 2%;
+            width: 500px;
+        }
+        #seconnd{
+            border: 3px solid black;
+            margin-bottom: 2%;
+            width: 500px;
+        }
+        #third{
+            border: 3px solid black;
+            width: 500px;
+        }
+        h2{
+            background-color: rgb(135, 131, 131);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Task 3</h1>
+    <h3>show and  hide</h3>
+
+    <div  id="first"><h2>What is Lorem ipsum dolor sit?        <a href="" style="font-size: 20px;"  id="text1">   Show</a></h2>
+        
+    </div>
+    <div id="seconnd"><h2>Why do we use it?</h2>
+        <p id="second_text">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis cumque tempora sequi sapiente repudiandae labore minus, amet, reprehenderit id quae perferendis? Necessitatibus velit eum rem quod cupiditate eius incidunt sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad voluptates doloribus excepturi hic consequatur animi aliquam quae nulla distinctio. Eligendi explicabo adipisci dolor laudantium omnis velit earum quos dolorum!
+    
+    </p>
+    <a href="" id="text" onclick="hideData()" >Hide</a>
+    </div>
+
+    <div  id="third"><h2>Where does it come from?   <a href=""   style="font-size: 20px;" id="text1">Show</a></h2>
+     
+    </div>
+</body>
+<script>
+    document.getElementById("text1").addEventListener("click",function showData(){
+    let html=document.getElementById("second_text");
+
+    })
+   function hideData(){
+        document.getElementById("second_text").innerHTML="";
+
+    }
+</script>
+</html>
