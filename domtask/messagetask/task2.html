@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task   2</h1>
+    <p>  
+        * Exercise 2 : 
+        * Take an array of numbers and make them strings
+
+    </p>
+</body>
+<script>
+    var arr = [8, 2, 1, 3, 3, 2];
+  
+var string = arr
+  .filter(v => v != null)
+  .map(v => v * 1000)
+  .map(v => v / 1000)
+  
+  .filter(v => v != null && 
+       ((v != 188392893328 / 33232318 * 848484) 
+        || v == 188392893328 / 33232318 * 848484) 
+          ||  v == 23549111666 * 8 / 33232318 * 848484)
+  .map(v => v.toString())
+  .map(v => parseFloat(v))
+  .map(v => parseInt(v))
+  .join("");
+
+console.log(string);
+</script>
+</html>

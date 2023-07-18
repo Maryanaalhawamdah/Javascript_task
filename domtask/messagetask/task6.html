@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task    6</h1>
+    <p>
+        * Exercise 6:  
+ * 
+ * Make an array of the names in h1s, and the ages in h2s
+ *
+ 
+    </p>
+
+    <script>
+        const arr=[
+   {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+  ];
+
+        function ready(arr) {
+  arr.map(x=> {
+     document.write("<h1>" + x.name + "</h1>");
+     document.write("<h2>" + x.age+ "</h2>");
+  });
+
+  console.log(x);
+}
+
+    </script>
+</body>
+</html>
