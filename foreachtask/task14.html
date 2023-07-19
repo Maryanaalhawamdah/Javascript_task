@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Write a JavaScript program to create a new array out of the two supplied by creating each possible pair from the arrays. 
+
+
+      </p>
+</body>
+<script>
+ 
+ const xProd = (a, b) => a.reduce((acc, x) => acc.concat(b.map(y => [x, y])), []);
+console.log( 'array1:' ,xProd([1, 2], ['a', 'b']));
+console.log( 'array2:' ,xProd([1, 2], [1, 2]));
+console.log( 'array3:' ,xProd(['a', 'b'], ['a', 'b']));
+
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Task 4
+    </h1>
+    <p>
+        Exercise 4:
+* Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array passed 
+to the function with the new key and value added for each object 
+    </p>
+</body>
+<script>
+
+
+var arrOfObj = [{
+  name: 'eve'
+}, {
+  name: 'john'
+}, {
+  name: 'jane'
+}];
+
+var result = arrOfObj.map(function(el) {
+  var o = Object.assign({}, el);
+  o.title = 'instructor';
+  return o;
+})
+
+console.log('the old array' ,arrOfObj);
+console.log('the new array' ,result);
+</script>
+</html>

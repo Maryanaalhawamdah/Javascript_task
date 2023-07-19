@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Get every nth element in an given array
+    </p>
+</body>
+<script>
+    const every_nth = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1);
+console.log( 'row1' ,every_nth([1, 2, 3, 4, 5, 6], 1));
+console.log('row2' ,every_nth([1, 2, 3, 4, 5, 6], 2));
+console.log('row3' ,every_nth([1, 2, 3, 4, 5, 6], 3));
+console.log('row4' ,every_nth([1, 2, 3, 4, 5, 6], 4));
+</script>
+</html>

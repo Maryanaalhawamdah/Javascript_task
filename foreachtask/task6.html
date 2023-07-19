@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 6</h1>
+    <p>
+        // Excersice 1: Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one. 
+
+    </p>
+</body>
+<script>
+function compareObjects(obj1, obj2) {
+  let keys1 = Object.keys(obj1);
+  let keys2 = Object.keys(obj2);
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+  for (let key of keys1) {
+    if (!obj2.hasOwnProperty(key)) {
+      return false;
+    }
+    if (obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+ 
+  return true;
+}
+
+
+let obj1 = {name: "Alice", age: 25};
+let obj2 = {name: "Alice", age: 25};
+let obj3 = {name: "Bob", age: 30};
+
+console.log(compareObjects(obj1, obj2)); 
+console.log(compareObjects(obj1, obj3)); 
+
+</script>
+</html>

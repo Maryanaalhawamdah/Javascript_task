@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 7></h1>
+    <p>
+        Converts a comma-separated values string to a 2D array 
+
+    </p>
+    <p id="demo"></p>
+</body>
+<script>
+    const csv_to_array = (data, delimiter = ',', omitFirstRow = false) =>
+  data
+    .slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
+    .split('\n')
+    .map(v => v.split(delimiter));
+
+console.log( "array1",csv_to_array('a,b\nc,d')); 
+console.log("array2",csv_to_array('a;b\nc;d', ';')); 
+     
+</script>
+</html>

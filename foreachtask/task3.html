@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 3</h1>
+    <p>
+        Exercise 3:
+        * Write a function called showFirstAndLast which accepts an array of strings and returns a new array with only the first and last character of each string.
+        
+    </p>
+</body>
+<script>
+let arr=['hello','Maryana','World'];
+console.log(arr);
+
+function showFirstAndLast(arr){
+    let newArr = [];
+    arr.forEach((val)=>{
+        newArr.push(val[0] + val[val.length-1])
+    })
+    return newArr;
+}
+console.log( "the new array:" ,showFirstAndLast(arr));
+</script>
+</html>

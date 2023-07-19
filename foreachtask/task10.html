@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Filter out the specified values from an specifed array
+    </p>
+    
+</body>
+<script>
+    const pull = (arr, ...args) => {
+  let argState = Array.isArray(args[0]) ? args[0] : args;
+  let pulled = arr.filter((v, i) => !argState.includes(v));
+  arr.length = 0;
+  pulled.forEach(v => arr.push(v));
+  return pulled;
+};
+let arra1 = ['a', 'b', 'c', 'a', 'b', 'c'];
+console.log( 'array1:'  ,pull(   arra1, 'a', 'c'));
+let arra2 =  ['a', 'b', 'c', 'a', 'b', 'c'];
+console.log(  'array2:',pull(arra2, 'b'));
+</script>
+</html>

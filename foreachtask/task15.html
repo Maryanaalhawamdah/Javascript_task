@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Write a JavaScript program that will return true if the string is correct or false if the string is uncorrect 
+
+    </p>
+</body>
+<script>
+var texts = ["test", "rest", "why", "puss"];
+
+for(var idx in texts){
+    var text = texts[idx].split("");
+    console.log(text + " -> " + text.some(function(v,i,a){return a.lastIndexOf(v)!=i;}) );
+    
+  }
+</script>
+</html>

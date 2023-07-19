@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Combine the numbers of a given array into an array containing all combinations
+    </p>
+</body>
+<script>
+    const powerset = arr => arr.reduce((a, v) => a.concat(a.map(r => [v].concat(r))), [[]]);
+console.log( 'array1:' ,powerset([1, 2]));
+console.log( 'array2:' , powerset([1, 2, 3]));
+console.log('array3:',powerset([1, 2, 3, 4]));
+</script>
+</html>

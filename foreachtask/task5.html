@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Task 5
+    </h1>
+    <p>
+        Exercise 5:
+* Write a function called vowelCount which accepts a string and returns an object with the keys as the vowel and the 
+values as the number of times the vowel appears in the string. This function should be case insensitive so a lowercase letter and uppercase letter should count
+
+    </p>
+</body>
+<script>
+    let str='I Am awesome and so are you';
+console.log(str);
+
+
+function vowelCount(str){
+    var splitArr = str.toLowerCase().split("");
+    var obj = {};
+    var vowels = "aeiou";
+
+    splitArr.forEach(function(letter){
+        if(vowels.indexOf(letter) !== -1){
+            if(obj[letter]){
+                obj[letter]++;
+            } else{
+                obj[letter] = 1;
+            }
+        }
+    });
+    return obj;
+}
+console.log(vowelCount(str));
+</script>
+</html>
