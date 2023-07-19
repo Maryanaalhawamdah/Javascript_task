@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task  9</h1>
+    <p>
+        * Exercise 9:
+  * Write a function called extractKey which accepts an array of objects and some key and returns a new array with the value
+  of that key in each object.
+  
+    </p>
+</body>
+<script>
+var arr = [{
+  name: "Elie",
+  isInstructor: true
+}, {
+  name: "Tim",
+  isInstructor: true
+}, {
+  name: "Matt",
+  isInstructor: true
+}];
+console.log(arr);
+
+function extractKeys(array, key) {
+  return array.reduce((acc, obj) => {
+    return acc.concat(obj[key])
+  }, [])
+}
+
+console.log("the new array:"  ,extractKeys(arr, 'name'));
+</script>
+</html>

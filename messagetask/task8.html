@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 8</h1>
+    <p>
+        * Exercise 8:
+  * Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
+  
+    </p>
+</body>
+<script>
+  let  arr=[1,2,3,-2,-3];
+  console.log(arr);
+
+    function valTimesIndex(arr){
+    return arr.map(function(val,idx){
+        return val * idx;
+    })
+    
+};
+console.log("the new  array:",valTimesIndex(arr));
+</script>
+</html>
